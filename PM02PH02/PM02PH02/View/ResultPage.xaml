@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02PH02.View.ResultPage"
+             BackgroundImage ="maxresdefault.jpg"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Transparent" Margin="10,10,10,10">
+
+            <Frame BackgroundColor="violet" Padding="24" CornerRadius="0">
+                <Label Text="Datos:" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Label Text=""
+                HorizontalOptions="CenterAndExpand" /> 
+            <Label></Label>
+            <Label Text="Nombre:" FontSize="25"></Label> <Label Text="{Binding Nombre}"
+             FontSize="20"  
+            HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="Apellido:" FontSize="25"></Label>
+            <Label Text="{Binding Apellido}"
+             FontSize="20"   
+            HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="Edad:" FontSize="25"></Label>
+            <Label Text="{Binding Edad}"
+             FontSize="20"   
+            HorizontalOptions="CenterAndExpand" />
+            <Label Text="Email:" FontSize="25"></Label> 
+            <Label Text="{Binding Email}"
+            FontSize="20"
+            HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

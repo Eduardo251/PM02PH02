@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02PH02.SecondPage"
+             BackgroundImage ="maxresdefault.jpg"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Transparent" Margin="10,10,10,10">
+            <Frame BackgroundColor="violet" Padding="24" CornerRadius="0">
+                <Label Text="Resultados" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Resultados" x:Name="lbrslt"
+                HorizontalOptions="CenterAndExpand" FontSize="36" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

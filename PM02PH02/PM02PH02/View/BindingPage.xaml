@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02PH02.View.BindingPage"
+             BackgroundImage ="maxresdefault.jpg"
+             NavigationPage.HasNavigationBar="false">
+             
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Transparent" Margin="10,10,10,10" >
+
+            <Frame BackgroundColor="violet" Padding="24" CornerRadius="0">
+                <Label Text="Persona" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Label Text="Nombre" Padding="0,0,0,0" TextColor="pink" ></Label>
+            <Entry x:Name="txtnombre" TextColor="pink" ></Entry>
+
+            <Label Text="Apellido" TextColor="pink" ></Label>
+            <Entry x:Name="txtapellido" TextColor="pink"></Entry>
+
+            <Label Text="Edad" TextColor="pink" ></Label>
+            <Entry x:Name="txtedad" Keyboard="Numeric" TextColor="pink" ></Entry>
+
+            <Label Text="Email" TextColor="pink" ></Label>
+            <Entry x:Name="txtmail" Keyboard="Email" TextColor="pink" ></Entry>
+
+            <Button x:Name="btnbinding" Text="Pasar por Binding" Clicked="btnbinding_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
